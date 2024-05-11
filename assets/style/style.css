@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poetsen One", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #545454;
+    font-size: 1rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #EBEBEB;
+    height: 100vh;
+    width: 600px;
+    border-radius: 10px;
+}
+
+.title {
+    display: flex;
+    gap: 10px;
+    margin: 30px 0;
+}
+
+.title h1 {
+    color: #545454;
+    font-size: 2.5rem;
+}
+
+.title span {
+    color: rgb(10, 130, 197);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-bottom: 25PX;
+}
+
+form label {
+    color: #545454;
+    margin-bottom: 5px;
+}
+
+form input {
+    border-radius: 3px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid rgba(84, 84, 84, .5);
+}
+
+form input:focus {
+    outline-color: rgba(10,130,197, .5);
+}
+
+.botao {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.botao button {
+    background-color: #00BF63;
+    color: #EBEBEB;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+.botao button:hover {
+    opacity: .6;
+    cursor: pointer;
+}
+
+.botao button:active {
+    opacity: .8;
+}
+
+.listaDeNumeros {
+    background-color: white;
+    width: 400px;
+    min-height: 300px;
+    max-height: 300px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    overflow-y: scroll;
+}
+
+.listaDeNumeros table {
+    color: #0A82C5;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    border-spacing: 0;
+}
+
+.listaDeNumeros tbody tr td {
+    color: #545454;
+    border-bottom: 1px solid rgba(84, 84, 84, .5);
+    padding: 5px;
+    font-size: 0.8rem;
+    font-weight: normal;
+}
+
+.listaDeNumeros tbody tr td #excluir {
+    background-color: red;
+    color: #EBEBEB;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: .6rem;
+}
+
+.listaDeNumeros tbody tr td #excluir:hover {
+    opacity: .5;
+    cursor: pointer;
+}
+
+.listaDeNumeros tbody tr td #excluir:active {
+    opacity: .8;
+}

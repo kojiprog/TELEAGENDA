@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <title>TeleAgenda</title>
+</head>
+
+<body>
+    <main class="container">
+        <div class="title">
+            <h1><span>TELE</span>AGENDA</h1>
+            <img src="./assets/img/logo.png" alt="telefone">
+        </div>
+        <form id="formulario">
+            <label for="name">Nome: </label>
+            <input type="text" id="name" required placeholder="Nome do contato">
+            <label for="tel">Telefone: </label>
+            <input type="tel" name="telefone" id="telefone" maxlength="15" onkeyup="handlePhone(event)"required placeholder="(xx) xxxxx-xxxx">
+            <div class="botao">
+                <button type="submit">ADICIONAR</button>
+                
+            </div>
+        </form>
+        <div class="listaDeNumeros">
+            <table id="tabela">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Telefone</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
